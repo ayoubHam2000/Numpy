@@ -22,3 +22,24 @@ res = np.r_[np.repeat(a, 3), np.tile(a, 3)]
 res = np.intersect1d(a, b) 
 res = np.setdiff1d(a, b)
 pair_max = np.vectorize(maxx, otypes = [float])
+arr = arr[::-1]
+m = np.arange(arr.shape[0] - 1, -1, -1)
+
+np.random.randint(5, 10, size = (5, 3)) + np.random.rand(5, 3)
+np.random.uniform(5, 10, size = (5, 3))
+
+################################################## 21-30
+np.random.random([3,3])/1e3
+np.set_printoptions(suppress = True, precision = 6)
+np.set_printoptions(threshold = 1000)
+np.genfromtxt(url, delimiter=',', dtype='object', usecols=[0, 1, 2, 3])
+iris.flatten() ->27 more detail
+print(np.mean(data[:, 0]))
+print(np.median(data[:, 0]))
+print(np.std(data[:, 0]))
+normalized = (data - Min ) / (Max - Min)
+def softmax(x) :
+    return np.exp(x) / sum(np.exp(x))
+
+
+################################################## 31-40
